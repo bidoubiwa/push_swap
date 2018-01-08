@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 14:31:38 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/04 17:30:36 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/08 18:36:50 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static int		check_for_dubble(t_tab *tab)
 		y = i + 1;
 		while (y < tab->size)
 		{
-			if (tab->stack_a[i] == tab->stack_b[y])
+			if (tab->stack_a[i] == tab->stack_a[y])
 			{
 				ft_printf("i : %d y : %d\n",tab->stack_a[i],tab->stack_b[y]);
 				return (0);
@@ -36,17 +36,18 @@ static int		check_for_dubble(t_tab *tab)
 	return (1);
 }
 
-static int		copy_to_stack_a(t_tab *tab, char **av)
+static int		copy_to_stack_a(t_tab *tab, char **av, t_options *options)
 {
 	int	i;
 	int y;
 
-	i = 1;
+	i = 1 + options->nbr;
 	y = 0;
-	while (i < tab->size + 1)
+//	ft_printf("tab size : %d nbr optons : %d\n", tab->size, options->nbr);
+	while (i < tab->size + 1 + options->nbr)
 	{
-		ft_printf("str : %s atoi : %d\n",av[i], ft_atoi(av[i]));
 		tab->stack_a[y] = ft_atoi(av[i]);
+//		ft_printf("tab : %d\n", tab->stack_a[y]);
 		i++;
 		y++;
 	}
@@ -60,26 +61,27 @@ static int		copy_to_stack_a(t_tab *tab, char **av)
 	return (1);
 }
 
-static t_tab	*create_struct(int ac, char **av)
+static t_tab	*create_struct(int ac, char **av, t_options *options)
 {
 	t_tab	*tab;
 	if (!(tab = ft_memalloc(sizeof(t_tab))))
 		return (NULL);
-	if (!(tab->stack_a = ft_memalloc(sizeof(int) * ac - 1)))
+	tab->size = ac - options->nbr - 1;
+	if (!(tab->stack_a = ft_memalloc(sizeof(int) * tab->size)))
 	{
 		free(tab);
 		return(NULL);
 	}
-	if (!(tab->stack_b = ft_memalloc(sizeof(int) * ac - 1)))
+	if (!(tab->stack_b = ft_memalloc(sizeof(int) * tab->size)))
 	{
 		free(tab->stack_a);
 		free(tab);
 		return (NULL);
 	}
 	tab->index_b = 0;
-	tab->size = ac - 1;
 	tab->index_a = tab->size - 1;
-	if (!copy_to_stack_a(tab,av))
+	tab->options = options;
+	if (!copy_to_stack_a(tab, av, options))
 	{
 		ft_printf("copy to stack\n");
 		return (NULL);
@@ -87,38 +89,39 @@ static t_tab	*create_struct(int ac, char **av)
 	return (tab);
 }
 
-static int		check_values(int ac, char **av)
+static t_options		*create_option_struct(void)
 {
-	int		i;
-	int		y;
+	t_options	*options;
 
-	(void) ac;
-	y = 0;
-	i = 1;
-	while (i < ac)
-	{
-		if (!ft_strisvalidint(av[i]))
-			return(0);
-		i++;
-	}
-	return (1);
+	if (!(options = ft_memalloc(sizeof(t_options))))
+		return (NULL);
+	options->v = 0;
+	options->d = 0;
+	options->nbr = 0;
+	return (options);
 }
 
-t_tab	*create_array(int ac, char **av)
+t_tab					*create_array(int ac, char **av)
 {
-	t_tab	*tab;
-	
+	t_tab		*tab;
+	t_options	*options;
+
 	if (ac == 1)
 	{
 		ft_printf("\n");
 		return (NULL);
 	}
-	if (!(check_values(ac, av)))
+	if (!(options = create_option_struct()))
+	{
+		ft_printf("Create Options struct\n");
+		return (NULL);
+	}
+	if (!(check_values(ac, av, options)))
 	{
 		ft_printf("check values\n");
 		return (NULL);
 	}
-	if (!(tab = create_struct(ac, av)))
+	if (!(tab = create_struct(ac, av, options)))
 	{
 		ft_printf("create struct\n");
 		return (NULL);
