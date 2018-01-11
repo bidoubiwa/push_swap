@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/03 23:14:05 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/08 21:51:32 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/11 14:15:40 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ static void		show_piles(t_tab *tab)
 	ft_printf("\n");
 }
 
+// a supprimer
 static void		show_array(t_tab *tab)
 {
 	int i;
@@ -44,12 +45,14 @@ static void		show_array(t_tab *tab)
 	ft_printf("\n");
 }
 
-int		use_instruction(char **opp)
+static	int		use_instruction(char *opp, t_tab *tab)
 {
-	
+	if (ft_strequ(opp, "sa") || ft_strequ(opp, "sb") || ft_strequ(opp, "ss"))
+		tab = swap_a_b(tab, opp[1]);
+	return (1);
 }
 
-int		main(int ac, char** av)
+int				main(int ac, char** av)
 {
 	char		*line;
 	t_tab		*tab;
@@ -64,10 +67,10 @@ int		main(int ac, char** av)
 	{
 		ft_printf("%s\n", line);
 		if ((tab->options)->d)
-			if (use_instruction(line))
+			if (use_instruction(line, tab))
 				return (ft_printf("Error\n"));
-		else
-			;// enregistrer
+//		else
+//			;// enregistrer
 
 		if ((tab->options)->v)
 			show_piles(tab);

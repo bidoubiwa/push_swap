@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:14:30 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/08 21:44:39 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/11 14:15:01 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,11 @@ typedef struct		s_tab
 	t_options		*options;
 }					t_tab;
 
-typedef struct		s_opp
+/*typedef struct		s_opp
 {
 	char			*name;
 	t_tab			*(*op)(t_tab *tab);
-}					t_opp;
+}					t_opp;*/
 
 /*
  *	INITIALISE VALUES
@@ -47,15 +47,18 @@ t_tab				*create_array(int ac, char **av);
  * ERROR HANDLING
  */
 int					check_values(int ac, char **av, t_options *options);
-
+/*
+ *	OPPERATIONS
+ */
+t_tab				*swap_a_b(t_tab *tab, char pile);
 /*
  *	OPPERATIONS
  */
 t_tab		*swap_a(t_tab *tab);
 
-static t_opp		g_opp[] =
+/*static t_opp		g_opp[] =
 {
 	{"sa",&swap_a},
 	{NULL,&swap_a}
-};
+};*/
 #endif
