@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 14:31:38 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/08 18:36:50 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/11 15:11:26 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,8 +78,8 @@ static t_tab	*create_struct(int ac, char **av, t_options *options)
 		free(tab);
 		return (NULL);
 	}
-	tab->index_b = 0;
-	tab->index_a = tab->size - 1;
+	tab->index_b = tab->size;
+	tab->index_a = 0;
 	tab->options = options;
 	if (!copy_to_stack_a(tab, av, options))
 	{
