@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/05 17:15:26 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/08 18:15:57 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/11 22:57:24 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,12 @@ static int	is_option(char *s, t_options *options)
 		options->nbr = options->nbr + 1;
 		return (1);
 	}
- 
+	if (ft_strequ(s,"-r") && options->r == 0)
+	{
+		options->r = 1;
+		options->nbr = options->nbr + 1;
+		return (1);
+	}
 	return (0);
 }
 
@@ -38,13 +43,15 @@ int		check_values(int ac, char **av, t_options *options)
 	while (is_option(av[i], options) && i < ac)
 		i++;
 	while (i < ac)
-	{	
+	{
 		if (!ft_strisvalidint(av[i]))
 			return(0);
 		i++;
 	}
 	if (options->nbr + 1 == ac)
+	{
 		return (0);
+	}
 	return (1);
 }
 

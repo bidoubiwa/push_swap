@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 14:31:38 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/11 15:11:26 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/11 20:44:37 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,7 @@ static t_options		*create_option_struct(void)
 		return (NULL);
 	options->v = 0;
 	options->d = 0;
+	options->r = 0;
 	options->nbr = 0;
 	return (options);
 }

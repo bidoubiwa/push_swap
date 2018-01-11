@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:14:30 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/11 17:42:29 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/11 22:34:30 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ typedef struct		s_options
 {
 	int				v;
 	int				d;
+	int				r;
 	int				nbr;
 }					t_options;	
 
@@ -57,6 +58,12 @@ int					push_a_b(t_tab *tab, char pile);
 int					rot_a_b(t_tab *tab, char pile);
 int					rev_rot_a_b(t_tab *tab, char pile);
 
+/*
+ * SHOW FUNCTIONS
+ */
+void				show_piles(t_tab *tab);
+void				show_saved_opps(char **opps,int nbr_opps);
+void				show_array(t_tab *tab);
 
 /*static t_opp		g_opp[] =
 {

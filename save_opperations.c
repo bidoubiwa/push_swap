@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 16:58:48 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/11 17:56:57 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/11 21:00:49 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,24 +59,16 @@ static char		**merge_opp_tabs(char **old, char **new)
 char			**save_opp(char **opps, char *opp, int *nbr_opp)
 {
 	char	**new;
-	char	**tmp;
+	
 	if (!correct_instruction(opp))
 		return (NULL);
 	*nbr_opp = *nbr_opp + 1;
-	ft_printf("nbr opp: %d\n", *nbr_opp);
+	//ft_printf("nbr opp: %d\n", *nbr_opp);
 	if (!(new = create_opp_list(opp, nbr_opp)))
 		return (NULL);
 	if (opps)
 		opps = merge_opp_tabs(opps, new);
 	else
 		opps = new;
-	
-	tmp = new;	
-	while (*tmp)
-	{
-		ft_printf("opp : %s\n", *tmp);
-		tmp++;
-	}
-	ft_printf("ah\n");
 	return (opps);
 }

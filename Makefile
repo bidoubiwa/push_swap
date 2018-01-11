@@ -6,7 +6,7 @@
 #    By: cvermand <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/03 21:37:06 by cvermand          #+#    #+#              #
-#    Updated: 2018/01/11 17:43:45 by cvermand         ###   ########.fr        #
+#    Updated: 2018/01/11 20:43:10 by cvermand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 # $@ -> all
@@ -18,7 +18,7 @@ NAME = checker
 CC			=	gcc
 FLAGS		=	-Wall -Werror -Wextra	
 _SRC		=	stack_parser.c mainchecker.c stack_error_parser.c opperations.c\
-				save_opperations.c
+				save_opperations.c show_functions.c
 #SRC 		=	$(addprefix $)
 BIN			=	$(_SRC:.c=.o)
 RM			= /bin/rm
