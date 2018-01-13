@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 20:37:38 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/11 22:55:57 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/13 18:15:15 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,27 @@ void			show_saved_opps(char **opps, int nbr_opps)
 	ft_printf("\033[38;5;93mNombre opperations : \033[0m%d\n", nbr_opps);
 
 }
+
+void			show_saved_nbr(char **opps, int nbr_opps)
+{
+	char **tmp;
+
+	(void) nbr_opps;
+	if (opps)
+	{
+		tmp = opps;	
+		ft_printf("\033[38;5;33mAll numbers : \033[0m");
+		while (*tmp)
+		{
+			ft_printf("%s ", *tmp);
+			tmp++;
+		}
+		ft_printf("\n");
+	}
+	ft_printf("\033[38;5;93mSize list : \033[0m%d\n", ft_strtablen(opps));
+
+}
+
 
 // a supprimer
 void		show_array(t_tab *tab)

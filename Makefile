@@ -5,43 +5,63 @@
 #                                                     +:+ +:+         +:+      #
 #    By: cvermand <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/01/03 21:37:06 by cvermand          #+#    #+#              #
-#    Updated: 2018/01/11 20:43:10 by cvermand         ###   ########.fr        #
+#    Created: 2018/01/13 15:04:29 by cvermand          #+#    #+#              #
+#    Updated: 2018/01/13 17:39:15 by cvermand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-# $@ -> all
-# $< -> $(NAME)
-# $< -> all after :
 
-NAME = checker
+CHECKER		=	checker
+PUSH_SWAP	=	push_swap
 
 CC			=	gcc
-FLAGS		=	-Wall -Werror -Wextra	
-_SRC		=	stack_parser.c mainchecker.c stack_error_parser.c opperations.c\
-				save_opperations.c show_functions.c
-#SRC 		=	$(addprefix $)
-BIN			=	$(_SRC:.c=.o)
-RM			= /bin/rm
+CFLAGS		=	-Wall -Werror -Wextra
 
-all : $(NAME)
+_SRCS		=	struct_parser.c stack_error_parser.c opperations.c\
+				save_opperations.c show_functions.c executions_fct.c 
 
-$(NAME) : $(BIN)
-	make -C libft
-	#$(CC) $(FLAG) $(_SRC) libft/libft.a -I includes/
-	$(CC) $(FLAG) $(BIN) -o $(NAME) libft/libft.a
+_PS_SRCS	=	mainswap.c options_swap.c
+_PS_SRCS	+=	$(_SRCS)
+_C_SRCS		=	mainchecker.c options_checker.c
+_C_SRCS		+=	$(_SRCS)
+_LIBFT		=	libft.a
+
+SRCS_DIR	=	.
+LIB_DIR		=	libft
+PS_SRCS		=	$(addprefix $(SRCS_DIR)/, $(_PS_SRCS))
+C_SRCS		=	$(addprefix	$(SRCS_DIR)/, $(_C_SRCS))
+LIBFT		=	$(addprefix $(LIB_DIR)/, $(_LIBFT))
+
+C_OBJS		=	$(C_SRCS:.c=.o)
+PS_OBJS		=	$(PS_SRCS:.c=.o)
+
+all:	$(CHECKER) $(PUSH_SWAP)
+
+$(CHECKER) : $(LIBFT) $(C_OBJS)
+	@$(CC) $(CFLAGS) -o $(CHECKER) $(C_OBJS) -L$(LIB_DIR) -lft 
+	@echo "$(CHECKER) : $(_GREEN)Done$(_END)"
+
+$(PUSH_SWAP): $(LIBFT) $(PS_OBJS)
+	@$(CC) $(CFLAGS) -o $(PUSH_SWAP) $(PS_OBJS) -L$(LIB_DIR) -lft
+	@echo "$(PUSH_SWAP) : $(_GREEN)Done$(_END)"
+
+$(LIBFT):
+	@make -C $(LIB_DIR)
 
 %.o : %.c
-	$(CC) $(FLAGS) -c $< -o $@ -I includes/
+	$(CC) $(CFLAGS) -c $< -o $@ -I includes/
 
-clean :
-	make clean -C libft
-	rm -f $(BIN)
+clean:
+	@make fclean -C $(LIB_DIR)
+	@/bin/rm -f $(C_OBJS) $(PS_OBJS)
+	@echo "push_swap clean : $(_GREEN)Done$(_END)"
 
-fclean : clean
-	make fclean -C libft
-	rm -f $(NAME)
+fclean: clean
+	@/bin/rm -f $(CHECKER) $(PUSH_SWAP)
+	@echo "push_swap fclean : $(_GREEN)Done$(_END)"
 
-re : 
-	make fclean
-	make fclean -C libft
-	make
+re:
+	@make fclean
+	@make
+
+.PHONY: all clean fclean re
+

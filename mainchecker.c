@@ -6,81 +6,82 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/03 23:14:05 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/11 22:54:55 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/13 17:16:21 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-
-static	int		use_instruction(char *opp, t_tab *tab)
+char			**execution_or_save_while_read(char **opps, char *line, 
+		int *nbr_opp, t_tab *tab)
 {
-	int		ret;
-
-	ret = 0;
-	if (ft_strequ(opp, "sa") || ft_strequ(opp, "sb") || ft_strequ(opp, "ss"))
-		ret = swap_a_b(tab, opp[1]);
-	else if (ft_strequ(opp, "pa") || ft_strequ(opp, "pb" ))
-		ret = push_a_b(tab, opp[1]);
-	else if (ft_strequ(opp, "ra") || ft_strequ(opp, "rb") || 
-			ft_strequ(opp,"rr"))
-		ret = rot_a_b(tab, opp[1]);
-	else if (ft_strequ(opp, "rra") || ft_strequ(opp, "rrb") || 
-			ft_strequ(opp,"rrr"))
-		ret = rev_rot_a_b(tab, opp[2]);
-	return (ret);
+	if ((tab->options)->d)
+	{
+		if (!(opps = save_opp(opps, line, nbr_opp)) ||
+				!(use_instruction(line, tab)))
+		{
+			ft_printf("HERE Error\n");
+			return (NULL);
+		}
+	}
+	else if (!(opps = save_opp(opps, line, nbr_opp)))
+	{
+		{
+			ft_printf("Error\n");
+			return (NULL);
+		}
+	}
+	if ((tab->options)->v && (tab->options)->d)
+		show_piles(tab);
+	if ((tab->options)->r)
+		show_saved_opps(opps, *nbr_opp);
+	return (opps);
 }
 
-
-int				main(int ac, char** av)
+int				execution_after_read(char **opps, t_tab *tab)
 {
-	char		*line;
-	t_tab		*tab;
-	int			nbr_opp;
-	char		**opps;
-
-	opps = NULL;
-	nbr_opp = 0;
-	if (!(tab = create_array(ac, av)))
-	{
-		ft_printf("Error\n");
-		return (0);
-	}
-	show_array(tab);
-	while (get_next_line(0,&line))
-	{
-		if ((tab->options)->d)
-		{
-			if (!(opps = save_opp(opps, line, &nbr_opp)) ||
-						!(use_instruction(line, tab)))
-				return (ft_printf("Error\n"));
-		}
-		else
-		{
-			if (!(opps = save_opp(opps, line, &nbr_opp)))
-				return (ft_printf("Error\n"));
-		}
-		if ((tab->options)->v && (tab->options)->d)
-			show_piles(tab);
-		if ((tab->options)->r)
-			show_saved_opps(opps, nbr_opp);
-	}
-	if ((tab->options)->d == 0 && opps)
-	{
-		while (*opps)
+	while (*opps)
 		{
 			if (!(use_instruction(*opps, tab)))
-				return (ft_printf("Error\n"));
+				ft_printf("Error\n");
+				return (0);
 			if ((tab->options)->v)
 				show_piles(tab);
 			if ((tab->options->r))
 				ft_printf("%s\n", *opps);
 			opps++;
 		}
-	}
+	return (1);
+}
 
-	// check if b empty
-	// check if a in order
+int				main(int ac, char** av)
+{
+	char		*line;
+	t_tab		tab;
+	t_options	options;
+	int			nbr_opp;
+	char		**opps;
+
+	opps = NULL;
+	nbr_opp = 0;
+	if	(ac == 1)
+		return (ft_printf("\n"));
+	parse_checker_options(ac, av, &options);
+	if (!(parse_arguments(ac, av, &options, &tab)))
+		return (ft_printf("Error\n"));	
+	//ft_printf("options : d: %d v: %d r: %d nbr: %d\n",options.d, options.v, options.r, options.nbr);
+	//show_array(&tab);
+	while (get_next_line(0,&line))
+	{
+		if (!(opps = execution_or_save_while_read(opps, line, &nbr_opp, &tab)))
+			return (0);
+	}
+	if (options.d == 0 && opps)
+	{
+		if (!(execution_after_read(opps, &tab)))
+			return (0);
+	}
+	check_if_pile_is_sorted(&tab);
 	ft_printf("end\n");
 	return (0);
 }

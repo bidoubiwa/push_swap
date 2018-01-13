@@ -6,52 +6,45 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/05 17:15:26 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/11 22:57:24 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/13 18:16:13 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int	is_option(char *s, t_options *options)
-{
-	if (ft_strequ(s,"-v") && options->v == 0)
-	{
-		options->v = 1;
-		options->nbr = options->nbr + 1;
-		return (1);
-	}
-	if (ft_strequ(s,"-d") && options->d == 0)
-	{
-		options->d = 1;
-		options->nbr = options->nbr + 1;
-		return (1);
-	}
-	if (ft_strequ(s,"-r") && options->r == 0)
-	{
-		options->r = 1;
-		options->nbr = options->nbr + 1;
-		return (1);
-	}
-	return (0);
-}
 
-int		check_values(int ac, char **av, t_options *options)
+int		check_values(char **av)
 {
 	int		i;
 
-	i = 1;
-	while (is_option(av[i], options) && i < ac)
-		i++;
-	while (i < ac)
+	i = 0;
+	while (av[i])
 	{
 		if (!ft_strisvalidint(av[i]))
+		{
+			ft_printf("int too big or invalid int");
 			return(0);
+		}
 		i++;
-	}
-	if (options->nbr + 1 == ac)
-	{
-		return (0);
 	}
 	return (1);
 }
 
+int		parse_arguments(int ac, char **av, t_options *options, t_tab *tab)
+{
+	//char	**tmp;
+	if	(ac - options->nbr == 2)
+		av	= ft_strsplit(av[ac - 1], ' ');
+	else
+		av	= &av[options->nbr + 1];
+	//show_saved_nbr(av, 0);
+	if (!(check_values(av)))
+	{
+		ft_printf("check_values\n");
+		return (0);
+	}
+	if (!(parse_tab_struct(av, options, tab)))
+		return (0);
+	
+	return (1);
+}
