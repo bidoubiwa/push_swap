@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 20:37:38 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/13 18:15:15 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/13 20:35:55 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,38 @@ void		show_piles(t_tab *tab)
 	//ft_printf("index_a = %d index_b = %d",tab->index_a, tab->index_b);
 	//ft_printf("\n");
 }
+
+void		show_piles_alligned(t_tab *tab)
+{
+	int i;
+	int y;
+
+	i = 0;
+	y = 0;
+	while (i < tab->size)
+	{
+		if (i >= tab->index_a)
+			ft_printf("\033[38;5;34m%2d\033[0m", tab->stack_a[i]);
+		else
+			ft_printf("%2c",'.');
+		i++;
+	}
+
+	ft_printf("\n");
+	while (y < tab->size)
+	{
+		if (y >= tab->index_b) 
+			ft_printf("\033[38;5;33m%2d\033[0m", tab->stack_b[y]);
+		else
+			ft_printf("%2c",'.');
+		y++;
+	}
+	ft_printf("\n");
+//	ft_printf(" nbr options : %d", (tab->options)->nbr);
+	//ft_printf("index_a = %d index_b = %d",tab->index_a, tab->index_b);
+	//ft_printf("\n");
+}
+
 
 void			show_saved_opps(char **opps, int nbr_opps)
 {

@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/13 15:21:12 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/13 20:21:38 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/13 21:10:06 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,15 +43,39 @@ int		real_tab_to_simplified(t_tab *old, t_tab *new)
 	return (1);
 }
 
+int		copy_tab(t_tab *old, t_tab *new)
+{
+	int i;
+
+	i = 0;
+	if (!(new->stack_a = ft_memalloc(sizeof(int) * old->size)))
+		return (0);
+	if(!(new->stack_b = ft_memalloc(sizeof(int) * old->size)))
+		return (0);
+	new->size = old->size;
+	new->index_a = old->index_a;
+	new->index_b = old->index_b;
+	while (i < new->size)
+	{
+		new->stack_a[i] = old->stack_a[i];
+		i++;
+	}
+	return (1);
+}
+
 int		push_swap(t_tab	*real_tab, t_opp *opp)
 {
 	t_tab	simple_tab;
+	t_tab	simple_copy;
 
 	(void) opp;
 	if (!(real_tab_to_simplified(real_tab, &simple_tab)))
 		return (0);
-
+	copy_tab(&simple_tab, &simple_copy);
 	show_piles(&simple_tab);
+	// FIRST TRY
+	
+//	opp1 = simple_ra_sa_pb(&copy_tab)
 	return (1);
 }
 

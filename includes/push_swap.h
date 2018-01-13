@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:14:30 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/13 18:37:18 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/13 21:02:51 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,12 +50,13 @@ typedef struct		s_opp
  *	INITIALISE VALUES
  */
 t_tab				*create_array(int ac, char **av);
-char				**save_opp(char **opps, char *opp, int *nbr_opp);
+t_opp				*save_opp(t_opp *opps, char *opp);
 void				parse_checker_options(int ac, char **av, t_options *options);
 void				parse_swap_options(int ac, char **av, t_options *options);
 t_tab				*parse_tab_struct(char **av, t_options *options,
 		t_tab *tab);
 int					parse_arguments(int ac, char **av, t_options *options, t_tab *tab);
+t_opp				*create_opp(void);
 /*
  * ERROR HANDLING
  */
@@ -76,6 +77,7 @@ int					check_if_pile_is_sorted(t_tab *tab);
  * SHOW FUNCTIONS
  */
 void				show_piles(t_tab *tab);
+void				show_piles_alligned(t_tab *tab);
 void				show_saved_opps(char **opps,int nbr_opps);
 void				show_array(t_tab *tab);
 void				show_saved_nbr(char **opps, int nbr_opps);
