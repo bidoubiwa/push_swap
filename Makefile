@@ -6,7 +6,7 @@
 #    By: cvermand <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/13 15:04:29 by cvermand          #+#    #+#              #
-#    Updated: 2018/01/13 21:07:49 by cvermand         ###   ########.fr        #
+#    Updated: 2018/01/14 14:05:50 by cvermand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ CFLAGS		=	-Wall -Werror -Wextra
 _SRCS		=	struct_parser.c stack_error_parser.c opperations.c\
 				save_opperations_struct.c show_functions.c executions_fct.c 
 
-_PS_SRCS	=	mainswap.c options_swap.c
+_PS_SRCS	=	pushswap.c options_swap.c
 _PS_SRCS	+=	$(_SRCS)
 _C_SRCS		=	mainchecker.c options_checker.c
 _C_SRCS		+=	$(_SRCS)
