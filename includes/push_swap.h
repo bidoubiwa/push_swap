@@ -6,13 +6,27 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:14:30 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/13 21:02:51 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/14 19:30:03 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 #include "../libft/includes/libft.h"
 
+/*enum				e_action
+{
+	sa,
+	sb,
+	ss,
+	pa,
+	pb,
+	ra,
+	rb,
+	rr,
+	rra,
+	rrb,
+	rrr
+}*/
 /*
  * OPTIONS = 
  */
@@ -38,6 +52,7 @@ typedef struct		s_opp
 {
 	char			**opps;
 	int				nbr;
+	struct s_opp	*next;
 }					t_opp;
 
 /*typedef struct		s_opp
@@ -56,7 +71,11 @@ void				parse_swap_options(int ac, char **av, t_options *options);
 t_tab				*parse_tab_struct(char **av, t_options *options,
 		t_tab *tab);
 int					parse_arguments(int ac, char **av, t_options *options, t_tab *tab);
-t_opp				*create_opp(void);
+t_opp				*create_opp(t_opp *opp);
+t_opp				*copy_opps(t_opp *old);
+t_tab				*copy_tab(t_tab *old);
+void				free_opp(t_opp *ope);
+void				free_tab(t_tab *tab);
 /*
  * ERROR HANDLING
  */
@@ -66,13 +85,24 @@ int					is_swap_option(char *s, t_options *options);
 /*
  *	OPPERATIONS
  */
+int					use_save_instruction(char *opp, t_tab *tab, t_opp *ope);
+t_opp				*execute_best_opps(t_opp *ope, t_tab *tab);
 int					swap_a_b(t_tab *tab, char pile);
 int					push_a_b(t_tab *tab, char pile);
 int					rot_a_b(t_tab *tab, char pile);
 int					rev_rot_a_b(t_tab *tab, char pile);
 int					use_instruction(char *opp, t_tab *tab);
+int					empty_b_pile(t_tab *tab, t_opp *ope);
+int					ra_until_sorted(t_tab *tab, t_opp *ope, char c);
+int					rra_until_sorted(t_tab *tab, t_opp *ope, char c);
+/*
+ * SORTING FUNCTIONS
+ */
+t_opp				*simple_ra_sa_pb(t_tab *tab, t_opp *ope);
+int					pile_a_sorted_b_empty(t_tab *tab);
+int					pile_a_is_sorted(t_tab *tab);
 int					check_if_pile_is_sorted(t_tab *tab);
-
+int					pile_is_strictly_sorted(t_tab *tab, char c);
 /*
  * SHOW FUNCTIONS
  */

@@ -6,11 +6,18 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 14:31:38 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/13 18:12:01 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/14 19:01:43 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+void			free_tab(t_tab *tab)
+{
+	free(tab->stack_a);
+	free(tab->stack_b);
+	free(tab);
+}
 
 static int		check_for_dubble(t_tab *tab)
 {
@@ -47,7 +54,6 @@ static int		copy_to_stack_a(t_tab *tab, char **av)
 	while (i < tab->size)
 	{
 		tab->stack_a[y] = ft_atoi(av[i]);
-//		ft_printf("tab : %d\n", tab->stack_a[y]);
 		i++;
 		y++;
 	}
@@ -55,7 +61,6 @@ static int		copy_to_stack_a(t_tab *tab, char **av)
 	{
 		free(tab->stack_a);
 		free(tab->stack_b);
-		free(tab);
 		return (0);
 	}
 	return (1);
@@ -65,7 +70,6 @@ t_tab	*parse_tab_struct(char **av, t_options *options,
 		t_tab *tab)
 {
 	tab->size = ft_strtablen(av);
-//	ft_printf("tab len : %zu", tab->size);
 	if (!(tab->stack_a = ft_memalloc(sizeof(int) * tab->size)))
 	{
 		free(tab);
@@ -77,10 +81,10 @@ t_tab	*parse_tab_struct(char **av, t_options *options,
 		free(tab);
 		return (NULL);
 	}
-	tab->index_b = tab->size;
+	tab->index_b = (int) tab->size;
 	tab->index_a = 0;
 	tab->options = options;
-	if (!copy_to_stack_a(tab, av))
+	if (!(copy_to_stack_a(tab, av)))
 	{
 		ft_printf("copy to stack\n");
 		return (NULL);

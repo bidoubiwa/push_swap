@@ -6,37 +6,11 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/03 23:14:05 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/13 21:22:23 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/14 19:43:53 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-/*char			**execution_or_save_while_read(char **opps, char *line, 
-		int *nbr_opp, t_tab *tab)
-{
-	if ((tab->options)->d)
-	{
-		if (!(opps = save_opp(opps, line, nbr_opp)) ||
-				!(use_instruction(line, tab)))
-		{
-			ft_printf("HERE Error\n");
-			return (NULL);
-		}
-	}
-	else if (!(opps = save_opp(opps, line, nbr_opp)))
-	{
-		{
-			ft_printf("Error\n");
-			return (NULL);
-		}
-	}
-	if ((tab->options)->v && (tab->options)->d)
-		show_piles_alligned(tab);
-	if ((tab->options)->r)
-		show_saved_opps(opps, *nbr_opp);
-	return (opps);
-}*/
 
 t_opp		*exec_or_save_while_read(t_opp *opps, char *line, t_tab *tab)
 {
@@ -82,18 +56,14 @@ int				main(int ac, char** av)
 	char		*line;
 	t_tab		tab;
 	t_options	options;
-//	int			nbr_opp;// A SUPPRIMER
-//	char		**opps; // A SUPPRIMER
 	t_opp		*opps;
 
-//	opps = NULL; // A SUPPRIMER
-//	nbr_opp = 0; // A SUPPRIMER
-	opps = create_opp();
+	opps = create_opp(NULL);
 	if	(ac == 1)
-		return (ft_printf("\n"));
+		return (ft_printf("ICI\n"));
 	parse_checker_options(ac, av, &options);
 	if (!(parse_arguments(ac, av, &options, &tab)))
-		return (ft_printf("Error\n"));	
+		return (ft_printf("Ici Error\n"));	
 	//ft_printf("options : d: %d v: %d r: %d nbr: %d\n",options.d, options.v, options.r, options.nbr);
 //	show_array(&tab);
 	while (get_next_line(0,&line))

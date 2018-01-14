@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 16:58:48 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/13 21:00:59 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/14 17:48:28 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,15 +56,46 @@ static char		**merge_opp_tabs(char **old, char **new)
 	return (new);
 }
 
-t_opp			*create_opp(void)
+t_opp			*create_opp(t_opp *old)
 {
 	t_opp	*new;
 
 	if (!(new = ft_memalloc((sizeof(t_opp)))))
 		return (NULL);
+	if (old != NULL)
+		old->next = new;
+	new->next = NULL;
 	new->opps = NULL;
 	new->nbr = 0;
 	return (new);
+}
+
+t_opp			*copy_opps(t_opp *old)
+{
+	t_opp	*new;
+
+	if (!(new = create_opp(NULL)))
+		return (NULL);
+	new->next = old->next;
+	new->nbr = old->nbr;
+	new->opps = ft_strtabdup(old->opps);
+	return (new);
+}
+
+void			free_opp(t_opp *ope)
+{
+	//show_saved_opps(ope->opps, ope->nbr);
+	/*while (i < ope->nbr)
+	{
+		strtmp = tmp[i];
+//		ft_printf("FREE : %s\n", tmp[i]);
+		if (strtmp)
+			free(strtmp);
+		strtmp = NULL;
+		i++;
+	}*/
+	free(ope->opps);
+	free(ope);
 }
 
 t_opp			*save_opp(t_opp *opps, char *opp)
