@@ -6,12 +6,35 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/05 17:15:26 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/13 18:16:13 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 13:35:41 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
+int		check_for_dubble(t_tab *tab)
+{
+	int		i;
+	int		y;
+
+	i = 0;
+	y = 0;
+	while (i < tab->size)
+	{
+		y = i + 1;
+		while (y < tab->size)
+		{
+			if (tab->stack_a[i] == tab->stack_a[y])
+			{
+				ft_printf("DOUBLE DOUBLE i : %d y : %d\n",tab->stack_a[i],tab->stack_b[y]);
+				return (0);
+			}
+			y++;
+		}
+		i++;
+	}
+	return (1);
+}
 
 int		check_values(char **av)
 {

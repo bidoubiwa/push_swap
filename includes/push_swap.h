@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:14:30 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/14 19:30:03 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 15:15:15 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ void				parse_swap_options(int ac, char **av, t_options *options);
 t_tab				*parse_tab_struct(char **av, t_options *options,
 		t_tab *tab);
 int					parse_arguments(int ac, char **av, t_options *options, t_tab *tab);
+int					real_tab_to_simplified(t_tab *old, t_tab *new);
 t_opp				*create_opp(t_opp *opp);
 t_opp				*copy_opps(t_opp *old);
 t_tab				*copy_tab(t_tab *old);
@@ -82,11 +83,13 @@ void				free_tab(t_tab *tab);
 int					check_values(char **av);
 int					is_checker_option(char *s, t_options *options);
 int					is_swap_option(char *s, t_options *options);
+int					check_for_dubble(t_tab *tab);
 /*
  *	OPPERATIONS
  */
 int					use_save_instruction(char *opp, t_tab *tab, t_opp *ope);
 t_opp				*execute_best_opps(t_opp *ope, t_tab *tab);
+void				free_biggest_tab_ope(t_tab **tab, t_tab *tab_c, t_opp **opp, t_opp *opp_c);
 int					swap_a_b(t_tab *tab, char pile);
 int					push_a_b(t_tab *tab, char pile);
 int					rot_a_b(t_tab *tab, char pile);
@@ -99,6 +102,7 @@ int					rra_until_sorted(t_tab *tab, t_opp *ope, char c);
  * SORTING FUNCTIONS
  */
 t_opp				*simple_ra_sa_pb(t_tab *tab, t_opp *ope);
+t_opp				*simple_no_pb(t_tab *tan. t_opp)
 int					pile_a_sorted_b_empty(t_tab *tab);
 int					pile_a_is_sorted(t_tab *tab);
 int					check_if_pile_is_sorted(t_tab *tab);

@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/03 23:14:05 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/14 19:43:53 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 13:30:37 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ int				execution_after_read(char **opps, t_tab *tab)
 	while (*opps)
 		{
 			if (!(use_instruction(*opps, tab)))
-				ft_printf("Error\n");
 				return (0);
 			if ((tab->options)->v)
 				show_piles(tab);
@@ -69,14 +68,13 @@ int				main(int ac, char** av)
 	while (get_next_line(0,&line))
 	{
 		if (!(opps = exec_or_save_while_read(opps, line, &tab)))
-			return (0);
+			return (ft_printf("Error\n"));
 	}
 	if (options.d == 0 && opps)
 	{
 		if (!(execution_after_read(opps->opps, &tab)))
-			return (0);
+			return (ft_printf("Error\n"));
 	}
 	check_if_pile_is_sorted(&tab);
-	ft_printf("end\n");
 	return (0);
 }

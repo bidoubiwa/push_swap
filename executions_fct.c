@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/13 17:01:22 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/14 19:27:51 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 13:33:30 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,8 +80,7 @@ int		empty_b_pile(t_tab *tab, t_opp *ope)
 {
 	while (tab->index_b != tab->size)
 	{
-		use_instruction("pa", tab);
-		if (!(save_opp(ope, "pa")))
+		if (!(use_save_instruction("pa", tab, ope)))
 			return (0);
 	}
 	return (ope->nbr);
@@ -89,29 +88,20 @@ int		empty_b_pile(t_tab *tab, t_opp *ope)
 
 int		ra_until_sorted(t_tab *tab, t_opp *ope, char c)
 {
-//	show_piles_alligned(tab);
 	while (!(pile_is_strictly_sorted(tab, c)))
 	{
-		//ft_printf("NEED RA IN SORTED");
-		use_instruction("ra", tab);
-		if (!(save_opp(ope, "ra")))
+		if (!(use_save_instruction("ra", tab, ope)))
 			return (0);
-//		show_piles_alligned(tab);
-//		show_saved_opps(ope->opps, ope->nbr);
 	}
 	return (ope->nbr);
 }
 
 int		rra_until_sorted(t_tab *tab, t_opp *ope, char c)
 {
-//	show_piles_alligned(tab);
 	while (!(pile_is_strictly_sorted(tab, c)))
 	{
-		use_instruction("rra", tab);
-		if (!(save_opp(ope,"rra")))
+		if (!(use_save_instruction("rra", tab, ope)))
 			return (0);
-//		show_piles_alligned(tab);
-//		show_saved_opps(ope->opps, ope->nbr);
 	}
 	return (ope->nbr);
 }
