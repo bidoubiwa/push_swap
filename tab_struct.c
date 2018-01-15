@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 14:31:38 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 13:37:04 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 23:11:31 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ t_tab	*copy_tab(t_tab *old)
 	int		i;
 	t_tab	*new;
 
-	i = 0;
 	if (!(new = ft_memalloc(sizeof(t_tab))))
 		return (NULL);
 	if (!(new->stack_a = ft_memalloc(sizeof(int) * old->size)))
@@ -61,9 +60,16 @@ t_tab	*copy_tab(t_tab *old)
 	new->index_a = old->index_a;
 	new->index_b = old->index_b;
 	new->options = old->options;
+	i = new->index_a;
 	while (i < new->size)
 	{
 		new->stack_a[i] = old->stack_a[i];
+		i++;
+	}
+	i = new->index_b;
+	while (i < new->size)
+	{
+		new->stack_b[i] = old->stack_b[i];
 		i++;
 	}
 	return (new);

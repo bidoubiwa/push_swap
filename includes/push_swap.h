@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:14:30 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 20:05:56 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/16 00:00:04 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,9 @@ int					empty_b_pile(t_tab *tab, t_opp *ope);
 int					ra_until_sorted(t_tab *tab, t_opp *ope, char c);
 int					rra_until_sorted(t_tab *tab, t_opp *ope, char c);
 int					rab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x); 
+int					rab_until_x_number_on_top_greater(t_tab *tab, t_opp *opp, char c, int x); 
 int					rrab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x);
+int					rrab_until_x_number_on_top_greater(t_tab *tab, t_opp *opp, char c, int x);
 /*
  * SORTING FUNCTIONS
  */
@@ -110,6 +112,14 @@ int					pile_a_sorted_b_empty(t_tab *tab);
 int					pile_a_is_sorted(t_tab *tab);
 int					check_if_pile_is_sorted(t_tab *tab);
 int					pile_is_strictly_sorted(t_tab *tab, char c);
+int					is_there_greater_or_smaller(t_tab *tab, char c, int x);
+
+/*
+ * FIND FUNCTIONS
+ */
+int					smallest_in_ab(t_tab *tab, char c);
+int					greatest_in_ab(t_tab *tab, char c);
+int					find_number_just_under_x(t_tab *tab, char c, int x);
 /*
  * SHOW FUNCTIONS
  */

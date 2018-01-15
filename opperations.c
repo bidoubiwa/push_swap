@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:27:29 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/11 16:57:49 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 23:58:11 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,10 +95,13 @@ int		rev_rot_a_b(t_tab *tab, char pile)
 	}
 	else if (pile == 'b' && tab->index_b < tab->size - 1)
 	{
+		
 		i = tab->size;
 		tmp = tab->stack_b[tab->size - 1];
-		while (--i < tab->size - 1)
+		while (--i > tab->index_b)
+		{
 			tab->stack_b[i] = tab->stack_b[i - 1];
+		}
 		tab->stack_b[i] = tmp;
 	}
 	else if (pile == 'r')

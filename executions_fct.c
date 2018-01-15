@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/13 17:01:22 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 20:07:21 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/16 00:09:23 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,17 +75,17 @@ int		use_save_instruction(char *opp, t_tab *tab, t_opp *ope)
 		return (0);
 	return (ret);
 }
-
 int		rab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x)
 {
 	if (c == 'b')
 	{
-		while (tab->stack_b[tab->index_b] != x)
+		while (!(tab->stack_b[tab->index_b] == x))
 		{
 			if (!(use_save_instruction("rb", tab, opp)))
 				return (0);
 		}
 	}
+//	ft_printf("x : %d index b : %d begin b : %d\n", x, tab->stack_b[tab->index_b], tab->stack_b[tab->size - 1]);
 	return (opp->nbr);
 }
 
@@ -93,12 +93,44 @@ int		rrab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x)
 {
 	if (c == 'b')
 	{
-		while (tab->stack_b[tab->index_b] != x)
+		while (!(tab->stack_b[tab->index_b] == x))
+		{
+			//show_piles(tab);
+			if (!(use_save_instruction("rrb", tab, opp)))
+				return (0);
+		}
+	}
+//	ft_printf("x : %d index b : %d begin b : %d\n", x, tab->stack_b[tab->index_b], tab->stack_b[tab->size - 1]);
+	return (opp->nbr);
+}
+
+
+int		rab_until_x_number_on_top_greater(t_tab *tab, t_opp *opp, char c, int x)
+{
+	if (c == 'b')
+	{
+		show_piles(tab);
+		while (!(tab->stack_b[tab->index_b] > x && tab->stack_b[tab->size - 1] < x))
 		{
 			if (!(use_save_instruction("rb", tab, opp)))
 				return (0);
 		}
 	}
+	ft_printf("x : %d index b : %d begin b : %d\n", x, tab->stack_b[tab->index_b], tab->stack_b[tab->size - 1]);
+	return (opp->nbr);
+}
+
+int		rrab_until_x_number_on_top_greater(t_tab *tab, t_opp *opp, char c, int x)
+{
+	if (c == 'b')
+	{
+		while (!(tab->stack_b[tab->index_b] > x && tab->stack_b[tab->size - 1] < x))
+		{
+			if (!(use_save_instruction("rrb", tab, opp)))
+				return (0);
+		}
+	}
+	ft_printf("x : %d index b : %d begin b : %d\n", x, tab->stack_b[tab->index_b], tab->stack_b[tab->size - 1]);
 	return (opp->nbr);
 }
 
