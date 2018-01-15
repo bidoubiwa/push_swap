@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/03 23:14:05 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 13:30:37 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 18:00:04 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,9 @@ int				main(int ac, char** av)
 		if (!(execution_after_read(opps->opps, &tab)))
 			return (ft_printf("Error\n"));
 	}
-	check_if_pile_is_sorted(&tab);
+	if (!(pile_a_sorted_b_empty(&tab)))
+		ft_printf("KO\n");
+	else
+		ft_printf("OK\n");
 	return (0);
 }

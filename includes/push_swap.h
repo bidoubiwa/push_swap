@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:14:30 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 15:15:15 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 20:05:56 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,11 +98,14 @@ int					use_instruction(char *opp, t_tab *tab);
 int					empty_b_pile(t_tab *tab, t_opp *ope);
 int					ra_until_sorted(t_tab *tab, t_opp *ope, char c);
 int					rra_until_sorted(t_tab *tab, t_opp *ope, char c);
+int					rab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x); 
+int					rrab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x);
 /*
  * SORTING FUNCTIONS
  */
 t_opp				*simple_ra_sa_pb(t_tab *tab, t_opp *ope);
-t_opp				*simple_no_pb(t_tab *tan. t_opp)
+t_opp				*simple_no_pb(t_tab *tab, t_opp *opp);
+t_opp				*quick_sort(t_tab *tab, t_opp *opp, int marge);
 int					pile_a_sorted_b_empty(t_tab *tab);
 int					pile_a_is_sorted(t_tab *tab);
 int					check_if_pile_is_sorted(t_tab *tab);

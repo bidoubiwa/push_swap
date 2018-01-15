@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/13 17:01:22 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 13:33:30 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 20:07:21 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,32 @@ int		use_save_instruction(char *opp, t_tab *tab, t_opp *ope)
 	if (!(save_opp(ope, opp)))
 		return (0);
 	return (ret);
+}
+
+int		rab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x)
+{
+	if (c == 'b')
+	{
+		while (tab->stack_b[tab->index_b] != x)
+		{
+			if (!(use_save_instruction("rb", tab, opp)))
+				return (0);
+		}
+	}
+	return (opp->nbr);
+}
+
+int		rrab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x)
+{
+	if (c == 'b')
+	{
+		while (tab->stack_b[tab->index_b] != x)
+		{
+			if (!(use_save_instruction("rb", tab, opp)))
+				return (0);
+		}
+	}
+	return (opp->nbr);
 }
 
 int		empty_b_pile(t_tab *tab, t_opp *ope)

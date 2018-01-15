@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/13 20:47:04 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 15:12:17 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/15 19:22:50 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,23 @@ t_opp	*simple_no_pb(t_tab *tab, t_opp *ope)
 	t_opp	*cpy_ope;
 	t_tab	*cpy_tab;
 	
-	
-	
-	return (NULL);
+	while (!(pile_a_sorted_b_empty(tab)))
+	{
+		if (pile_a_is_sorted(tab))
+		{
+			if (!(cpy_tab = copy_tab(tab)))
+				return (NULL);
+			if (!(cpy_ope = copy_opps(ope)))
+				return (NULL);
+			ra_until_sorted(tab, ope, 'a');	
+			rra_until_sorted(cpy_tab, cpy_ope, 'a');
+			free_biggest_tab_ope(&tab, cpy_tab, &ope, cpy_ope);		
+			return (ope);
+		}
+		else
+			use_save_instruction("sa", tab, ope);
+	}	
+	return (ope);
 }
 
 t_opp	*simple_ra_sa_pb(t_tab *tab, t_opp *ope)
