@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/15 19:05:39 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/16 00:08:26 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/23 11:09:31 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -176,7 +176,9 @@ t_opp	*quick_sort(t_tab *tab, t_opp *ope, int marge)
 			sort_b(&tab, &ope);
 			use_save_instruction("pb", tab, ope);
 		}
-		else
+		else if (find_next_marge("ra", tab, ope)))
+
+		else if (find_next_marge("rra", tab, ope))
 			use_save_instruction("ra", tab, ope);
 	}	
 	ft_printf("SORI");

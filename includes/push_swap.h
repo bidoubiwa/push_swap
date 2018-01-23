@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:14:30 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/16 00:00:04 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/23 11:07:47 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ t_opp				*copy_opps(t_opp *old);
 t_tab				*copy_tab(t_tab *old);
 void				free_opp(t_opp *ope);
 void				free_tab(t_tab *tab);
+t_opp				*find_last_opp(t_opp *opp);
 /*
  * ERROR HANDLING
  */
@@ -120,6 +121,7 @@ int					is_there_greater_or_smaller(t_tab *tab, char c, int x);
 int					smallest_in_ab(t_tab *tab, char c);
 int					greatest_in_ab(t_tab *tab, char c);
 int					find_number_just_under_x(t_tab *tab, char c, int x);
+t_opp				*find_next_marge(char *ope, t_tab *tab, t_ope *ope, int limit);
 /*
  * SHOW FUNCTIONS
  */

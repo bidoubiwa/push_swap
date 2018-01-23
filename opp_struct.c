@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 16:58:48 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 14:48:30 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/23 11:09:21 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,22 @@ static char		**merge_opp_tabs(char **old, char **new)
 	return (new);
 }
 
+t_opp			*find_last_opp(t_opp *opp)
+{
+	t_opp *tmp;
+
+	while (tmp->next)
+	{
+		tmp = tmp->next;
+	}
+	return (tmp);
+}
+
 t_opp			*create_opp(t_opp *old)
 {
 	t_opp	*new;
 
+	// search for last opp
 	if (!(new = ft_memalloc((sizeof(t_opp)))))
 		return (NULL);
 	if (old != NULL)

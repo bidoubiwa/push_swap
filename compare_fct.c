@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/15 13:37:40 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 21:34:27 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/23 11:10:07 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,12 @@ void	free_biggest_tab_ope(t_tab **tab, t_tab *tab_c, t_opp **opp,
 	}
 }
 
+t_ope	*find_next_marge(char *opp, t_tab *tab, t_ope *ope, int limit)
+{
+	t_ope *copy_opp;
+
+	
+	while (tab->stack_a[tab->index_a] >= limit)
+		use_save_instruction(opp, tab, ope);
+
+}
