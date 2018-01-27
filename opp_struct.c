@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 16:58:48 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/23 11:09:21 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/27 11:06:06 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ t_opp			*find_last_opp(t_opp *opp)
 {
 	t_opp *tmp;
 
+	tmp = opp;
 	while (tmp->next)
 	{
 		tmp = tmp->next;

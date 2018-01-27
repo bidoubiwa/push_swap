@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 20:37:38 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/14 19:55:01 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/27 18:11:23 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,21 @@ void		show_piles_alligned(t_tab *tab)
 	//ft_printf("\n");
 }
 
+void			show_opps(t_opp *opp)
+{
+	int		i;
+	char	**opps;
+
+	i = 0;
+	opps = opp->opps;
+	ft_printf("opps : ");
+	while (i < opp->nbr)
+	{
+		ft_printf("%s ", opps[i]);
+		i++;
+	}
+	ft_printf("\nnbr opps : %d\n", opp->nbr);
+}
 
 void			show_saved_opps(char **opps, int nbr_opps)
 {

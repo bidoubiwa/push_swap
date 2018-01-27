@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/13 15:21:12 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 23:13:28 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/27 19:11:10 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ t_opp		*push_swap(t_tab	*real_tab, t_opp *opp)
 	else if (simple_tab.size > 3 && simple_tab.size < 10)	
 		opp = simple_ra_sa_pb(simple_copy, opp);
 	else if (simple_tab.size >= 10)
-		opp = quick_sort(simple_copy, opp, 50);
+		opp = quick_sort(simple_copy, opp, 5);
 	return (opp);
 }
 

@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 00:14:30 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/23 11:07:47 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/27 18:51:55 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,8 @@ int					rab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x);
 int					rab_until_x_number_on_top_greater(t_tab *tab, t_opp *opp, char c, int x); 
 int					rrab_until_x_number_on_top(t_tab *tab, t_opp *opp, char c, int x);
 int					rrab_until_x_number_on_top_greater(t_tab *tab, t_opp *opp, char c, int x);
+t_opp				*merge_ra_rb(t_opp *ope, int pos, char c);
+//t_opp				*merge_rra_rrb(t_opp *ope);
 /*
  * SORTING FUNCTIONS
  */
@@ -114,14 +116,16 @@ int					pile_a_is_sorted(t_tab *tab);
 int					check_if_pile_is_sorted(t_tab *tab);
 int					pile_is_strictly_sorted(t_tab *tab, char c);
 int					is_there_greater_or_smaller(t_tab *tab, char c, int x);
-
+int					sort_b(t_tab **tab, t_opp **ope, char c);
 /*
  * FIND FUNCTIONS
  */
 int					smallest_in_ab(t_tab *tab, char c);
 int					greatest_in_ab(t_tab *tab, char c);
 int					find_number_just_under_x(t_tab *tab, char c, int x);
-t_opp				*find_next_marge(char *ope, t_tab *tab, t_ope *ope, int limit);
+t_opp				*find_next_marge(char *ope, t_tab **tab, t_opp **opp, int limit);
+int					is_rr_possible(t_opp *opp);
+int					is_rrr_possible(t_opp *opp);
 /*
  * SHOW FUNCTIONS
  */
@@ -130,6 +134,8 @@ void				show_piles_alligned(t_tab *tab);
 void				show_saved_opps(char **opps,int nbr_opps);
 void				show_array(t_tab *tab);
 void				show_saved_nbr(char **opps, int nbr_opps);
+void				show_opps(t_opp *opp);
+void				toto(void);
 /*static t_opp		g_opp[] =
 {
 	{"sa",&swap_a},

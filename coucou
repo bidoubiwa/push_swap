@@ -1,508 +1,778 @@
-896 56 391 519 388 768 249 295 801 166 
-[38;5;34m    9[0m    .
+990 221 708 299 490 734 350 123 792 278 24 786 663 984 911 983 118 153 412 169 
+[38;5;34m   19[0m    .
+[38;5;34m    5[0m    .
+[38;5;34m   12[0m    .
+[38;5;34m    7[0m    .
+[38;5;34m   10[0m    .
+[38;5;34m   13[0m    .
+[38;5;34m    8[0m    .
+[38;5;34m    2[0m    .
+[38;5;34m   15[0m    .
+[38;5;34m    6[0m    .
 [38;5;34m    0[0m    .
-[38;5;34m    5[0m    .
-[38;5;34m    6[0m    .
-[38;5;34m    4[0m    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
-[38;5;34m    8[0m    .
+[38;5;34m   14[0m    .
+[38;5;34m   11[0m    .
+[38;5;34m   18[0m    .
+[38;5;34m   16[0m    .
+[38;5;34m   17[0m    .
 [38;5;34m    1[0m    .
+[38;5;34m    3[0m    .
 [38;5;34m    9[0m    .
-[38;5;34m    0[0m    .
-[38;5;34m    5[0m    .
-[38;5;34m    6[0m    .
 [38;5;34m    4[0m    .
+index_marge : 0 tmp_marge = 5 tab->size : 20
+Apres ra 
+opps : ra 
+nbr opps : 1
+retour sort b
+opps : ra pb 
+nbr opps : 2
+retour merge
+opps : ra pb 
+nbr opps : 2
+Apres ra 
+opps : rra 
+nbr opps : 1
+retour sort b
+opps : rra pb 
+nbr opps : 2
+retour merge
+opps : rra pb 
+nbr opps : 2
+aavamt show ope
+opps : ra pb 
+nbr opps : 2
+aavamt show cpy_ope
+opps : rra pb 
+nbr opps : 2
+apres free
+    .    .
+[38;5;34m   12[0m    .
 [38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
+[38;5;34m   10[0m    .
+[38;5;34m   13[0m    .
 [38;5;34m    8[0m    .
-[38;5;34m    1[0m    .
-[38;5;34m    0[0m    .
-[38;5;34m    5[0m    .
+[38;5;34m    2[0m    .
+[38;5;34m   15[0m    .
 [38;5;34m    6[0m    .
-[38;5;34m    4[0m    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
-[38;5;34m    8[0m    .
+[38;5;34m    0[0m    .
+[38;5;34m   14[0m    .
+[38;5;34m   11[0m    .
+[38;5;34m   18[0m    .
+[38;5;34m   16[0m    .
+[38;5;34m   17[0m    .
 [38;5;34m    1[0m    .
+[38;5;34m    3[0m    .
 [38;5;34m    9[0m    .
-pb time
-SORT Bfirst elems
-    .    .
-[38;5;34m    5[0m    .
-[38;5;34m    6[0m    .
 [38;5;34m    4[0m    .
+[38;5;34m   19[0m[38;5;33m    5[0m
+index_marge : 1 tmp_marge = 5 tab->size : 20
+Apres ra 
+opps : ra pb ra ra ra ra ra 
+nbr opps : 7
+retour sort b
+opps : ra pb ra ra ra ra ra pb 
+nbr opps : 8
+retour merge
+opps : ra pb ra ra ra ra ra pb 
+nbr opps : 8
+Apres ra 
+opps : ra pb rra rra 
+nbr opps : 4
+retour sort b
+opps : ra pb rra rra pb 
+nbr opps : 5
+retour merge
+opps : ra pb rra rra pb 
+nbr opps : 5
+aavamt show ope
+opps : ra pb ra ra ra ra ra pb 
+nbr opps : 8
+aavamt show cpy_ope
+opps : ra pb rra rra pb 
+nbr opps : 5
+apres free
+    .    .
+    .    .
+[38;5;34m   19[0m    .
+[38;5;34m   12[0m    .
 [38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
+[38;5;34m   10[0m    .
+[38;5;34m   13[0m    .
 [38;5;34m    8[0m    .
+[38;5;34m    2[0m    .
+[38;5;34m   15[0m    .
+[38;5;34m    6[0m    .
+[38;5;34m    0[0m    .
+[38;5;34m   14[0m    .
+[38;5;34m   11[0m    .
+[38;5;34m   18[0m    .
+[38;5;34m   16[0m    .
+[38;5;34m   17[0m    .
 [38;5;34m    1[0m    .
-[38;5;34m    9[0m[38;5;33m    0[0m
-pb time
-SORT Bfirst elems
-    .    .
-    .    .
-[38;5;34m    6[0m    .
-[38;5;34m    4[0m    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
-[38;5;34m    8[0m    .
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-pb time
-SORT Bgreatest = 5 x : 6 
-    .    .
-    .    .
-[38;5;34m    6[0m    .
-[38;5;34m    4[0m    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
-[38;5;34m    8[0m    .
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-RAB
-RRAB
-before pb    .    .
-    .    .
-[38;5;34m    6[0m    .
-[38;5;34m    4[0m    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
-[38;5;34m    8[0m    .
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-    .    .
-    .    .
-    .    .
-[38;5;34m    4[0m    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
-[38;5;34m    8[0m[38;5;33m    6[0m
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-pb time
-SORT Bbetween
-between i : 6 and y : 5
-between i : 5 and y : 0
-FOUND between i : 5 and y : 0
-find : 5
-RAB
-RRAB
-    .    .
-    .    .
-    .    .
-[38;5;34m    4[0m    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
-[38;5;34m    8[0m[38;5;33m    6[0m
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 0
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-[38;5;34m    4[0m    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m    .
-[38;5;34m    8[0m[38;5;33m    0[0m
-[38;5;34m    1[0m[38;5;33m    6[0m
+[38;5;34m    3[0m[38;5;33m    4[0m
 [38;5;34m    9[0m[38;5;33m    5[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 5
-on est la 
-on est la 
-FOUND
+index_marge : 2 tmp_marge = 5 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb ra ra ra ra ra ra 
+nbr opps : 11
+retour sort b
+opps : ra pb rra rra pb ra ra ra ra ra ra rb pb 
+nbr opps : 13
+pos : 10
+MERGE pos : 10
+retour merge
+opps : ra pb rra rra pb ra ra ra ra ra rr pb 
+nbr opps : 12
+Apres ra 
+opps : ra pb rra rra pb rra rra 
+nbr opps : 7
+retour sort b
+opps : ra pb rra rra pb rra rra rrb pb 
+nbr opps : 9
+pos : 6
+MERGE pos : 6
+retour merge
+opps : ra pb rra rra pb rra rr pb 
+nbr opps : 8
+aavamt show ope
+opps : ra pb rra rra pb ra ra ra ra ra rr pb 
+nbr opps : 12
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb 
+nbr opps : 8
+apres free
     .    .
     .    .
     .    .
-    .    .
+[38;5;34m    9[0m    .
+[38;5;34m   19[0m    .
+[38;5;34m   12[0m    .
 [38;5;34m    7[0m    .
+[38;5;34m   10[0m    .
+[38;5;34m   13[0m    .
+[38;5;34m    8[0m    .
 [38;5;34m    2[0m    .
-[38;5;34m    3[0m[38;5;33m    4[0m
-[38;5;34m    8[0m[38;5;33m    5[0m
-[38;5;34m    1[0m[38;5;33m    0[0m
-[38;5;34m    9[0m[38;5;33m    6[0m
-pb time
-SORT Bgreatest = 6 x : 7 
-    .    .
-    .    .
-    .    .
-    .    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m[38;5;33m    4[0m
-[38;5;34m    8[0m[38;5;33m    5[0m
-[38;5;34m    1[0m[38;5;33m    0[0m
-[38;5;34m    9[0m[38;5;33m    6[0m
-RAB
-RRAB
-    .    .
-    .    .
-    .    .
-    .    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m[38;5;33m    4[0m
-[38;5;34m    8[0m[38;5;33m    5[0m
-[38;5;34m    1[0m[38;5;33m    0[0m
-[38;5;34m    9[0m[38;5;33m    6[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 6
-on est la 
-on est la 
-on est la 
-before pb    .    .
-    .    .
-    .    .
-    .    .
-[38;5;34m    7[0m    .
-[38;5;34m    2[0m    .
-[38;5;34m    3[0m[38;5;33m    6[0m
-[38;5;34m    8[0m[38;5;33m    4[0m
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-    .    .
-    .    .
-    .    .
-    .    .
-    .    .
-[38;5;34m    2[0m[38;5;33m    7[0m
-[38;5;34m    3[0m[38;5;33m    6[0m
-[38;5;34m    8[0m[38;5;33m    4[0m
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-pb time
-SORT Bbetween
-between i : 7 and y : 6
-between i : 6 and y : 4
-between i : 4 and y : 5
-between i : 5 and y : 0
-FOUND between i : 5 and y : 0
-find : 5
-RAB
-RRAB
-    .    .
-    .    .
-    .    .
-    .    .
-    .    .
-[38;5;34m    2[0m[38;5;33m    7[0m
-[38;5;34m    3[0m[38;5;33m    6[0m
-[38;5;34m    8[0m[38;5;33m    4[0m
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 0
-on est la 
-on est la 
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-    .    .
-    .    .
-[38;5;34m    2[0m[38;5;33m    0[0m
-[38;5;34m    3[0m[38;5;33m    7[0m
-[38;5;34m    8[0m[38;5;33m    6[0m
+[38;5;34m   15[0m    .
+[38;5;34m    6[0m    .
+[38;5;34m    0[0m    .
+[38;5;34m   14[0m    .
+[38;5;34m   11[0m    .
+[38;5;34m   18[0m    .
+[38;5;34m   16[0m[38;5;33m    3[0m
+[38;5;34m   17[0m[38;5;33m    5[0m
 [38;5;34m    1[0m[38;5;33m    4[0m
-[38;5;34m    9[0m[38;5;33m    5[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 5
-on est la 
-on est la 
-on est la 
-on est la 
-FOUND
+index_marge : 3 tmp_marge = 5 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb ra ra ra ra ra ra ra 
+nbr opps : 15
+retour sort b
+opps : ra pb rra rra pb rra rr pb ra ra ra ra ra ra ra rb pb 
+nbr opps : 17
+pos : 14
+MERGE pos : 14
+retour merge
+opps : ra pb rra rra pb rra rr pb ra ra ra ra ra ra rr pb 
+nbr opps : 16
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rra 
+nbr opps : 9
+retour sort b
+opps : ra pb rra rra pb rra rr pb rra rrb rrb pb 
+nbr opps : 12
+pos : 8
+MERGE pos : 8
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb 
+nbr opps : 11
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb ra ra ra ra ra ra rr pb 
+nbr opps : 16
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb 
+nbr opps : 11
+apres free
     .    .
     .    .
     .    .
     .    .
-    .[38;5;33m    2[0m
-    .[38;5;33m    5[0m
-[38;5;34m    3[0m[38;5;33m    0[0m
-[38;5;34m    8[0m[38;5;33m    7[0m
-[38;5;34m    1[0m[38;5;33m    6[0m
-[38;5;34m    9[0m[38;5;33m    4[0m
-pb time
-SORT Bbetween
-between i : 2 and y : 5
-between i : 5 and y : 0
-FOUND between i : 5 and y : 0
-find : 5
-RAB
-RRAB
+[38;5;34m    9[0m    .
+[38;5;34m   19[0m    .
+[38;5;34m   12[0m    .
+[38;5;34m    7[0m    .
+[38;5;34m   10[0m    .
+[38;5;34m   13[0m    .
+[38;5;34m    8[0m    .
+[38;5;34m    2[0m    .
+[38;5;34m   15[0m    .
+[38;5;34m    6[0m    .
+[38;5;34m    0[0m    .
+[38;5;34m   14[0m    .
+[38;5;34m   11[0m[38;5;33m    1[0m
+[38;5;34m   18[0m[38;5;33m    5[0m
+[38;5;34m   16[0m[38;5;33m    4[0m
+[38;5;34m   17[0m[38;5;33m    3[0m
+index_marge : 4 tmp_marge = 5 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra 
+nbr opps : 18
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb 
+nbr opps : 19
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb 
+nbr opps : 19
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb rra rra rra rra rra rra 
+nbr opps : 17
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb rra rra rra rra rra rra rrb rrb rrb pb 
+nbr opps : 21
+pos : 16
+MERGE pos : 16
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb rra rra rra rra rra rr rrb rrb pb 
+nbr opps : 20
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb 
+nbr opps : 19
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb rra rra rra rra rra rr rrb rrb pb 
+nbr opps : 20
+apres free
     .    .
     .    .
     .    .
     .    .
-    .[38;5;33m    2[0m
-    .[38;5;33m    5[0m
-[38;5;34m    3[0m[38;5;33m    0[0m
-[38;5;34m    8[0m[38;5;33m    7[0m
-[38;5;34m    1[0m[38;5;33m    6[0m
-[38;5;34m    9[0m[38;5;33m    4[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 4
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
     .    .
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    4[0m
-    .[38;5;33m    2[0m
-[38;5;34m    3[0m[38;5;33m    5[0m
-[38;5;34m    8[0m[38;5;33m    0[0m
-[38;5;34m    1[0m[38;5;33m    7[0m
-[38;5;34m    9[0m[38;5;33m    6[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 6
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    6[0m
-    .[38;5;33m    4[0m
-[38;5;34m    3[0m[38;5;33m    2[0m
-[38;5;34m    8[0m[38;5;33m    5[0m
-[38;5;34m    1[0m[38;5;33m    0[0m
-[38;5;34m    9[0m[38;5;33m    7[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 7
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    7[0m
-    .[38;5;33m    6[0m
-[38;5;34m    3[0m[38;5;33m    4[0m
-[38;5;34m    8[0m[38;5;33m    2[0m
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 0
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    0[0m
-    .[38;5;33m    7[0m
-[38;5;34m    3[0m[38;5;33m    6[0m
-[38;5;34m    8[0m[38;5;33m    4[0m
-[38;5;34m    1[0m[38;5;33m    2[0m
-[38;5;34m    9[0m[38;5;33m    5[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 5
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-FOUND
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    3[0m
-    .[38;5;33m    5[0m
-    .[38;5;33m    0[0m
-    .[38;5;33m    7[0m
-[38;5;34m    8[0m[38;5;33m    6[0m
-[38;5;34m    1[0m[38;5;33m    4[0m
-[38;5;34m    9[0m[38;5;33m    2[0m
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    3[0m
-    .[38;5;33m    5[0m
-    .[38;5;33m    0[0m
-    .[38;5;33m    7[0m
-[38;5;34m    1[0m[38;5;33m    6[0m
-[38;5;34m    9[0m[38;5;33m    4[0m
-[38;5;34m    8[0m[38;5;33m    2[0m
-pb time
-SORT Bbetween
-between i : 3 and y : 5
-between i : 5 and y : 0
-FOUND between i : 5 and y : 0
-find : 5
-RAB
-RRAB
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    3[0m
-    .[38;5;33m    5[0m
-    .[38;5;33m    0[0m
-    .[38;5;33m    7[0m
-[38;5;34m    1[0m[38;5;33m    6[0m
-[38;5;34m    9[0m[38;5;33m    4[0m
-[38;5;34m    8[0m[38;5;33m    2[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 2
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    2[0m
-    .[38;5;33m    3[0m
-    .[38;5;33m    5[0m
-    .[38;5;33m    0[0m
-[38;5;34m    1[0m[38;5;33m    7[0m
-[38;5;34m    9[0m[38;5;33m    6[0m
-[38;5;34m    8[0m[38;5;33m    4[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 4
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    4[0m
-    .[38;5;33m    2[0m
-    .[38;5;33m    3[0m
-    .[38;5;33m    5[0m
-[38;5;34m    1[0m[38;5;33m    0[0m
-[38;5;34m    9[0m[38;5;33m    7[0m
-[38;5;34m    8[0m[38;5;33m    6[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 6
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    6[0m
-    .[38;5;33m    4[0m
-    .[38;5;33m    2[0m
-    .[38;5;33m    3[0m
-[38;5;34m    1[0m[38;5;33m    5[0m
-[38;5;34m    9[0m[38;5;33m    0[0m
-[38;5;34m    8[0m[38;5;33m    7[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 7
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    7[0m
-    .[38;5;33m    6[0m
-    .[38;5;33m    4[0m
-    .[38;5;33m    2[0m
-[38;5;34m    1[0m[38;5;33m    3[0m
-[38;5;34m    9[0m[38;5;33m    5[0m
-[38;5;34m    8[0m[38;5;33m    0[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 0
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-    .    .
-    .    .
-    .    .
-    .[38;5;33m    0[0m
-    .[38;5;33m    7[0m
-    .[38;5;33m    6[0m
-    .[38;5;33m    4[0m
-[38;5;34m    1[0m[38;5;33m    2[0m
-[38;5;34m    9[0m[38;5;33m    3[0m
-[38;5;34m    8[0m[38;5;33m    5[0m
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 5
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-on est la 
-FOUND
-    .    .
-    .    .
-    .[38;5;33m    1[0m
-    .[38;5;33m    5[0m
-    .[38;5;33m    0[0m
-    .[38;5;33m    7[0m
-    .[38;5;33m    6[0m
-    .[38;5;33m    4[0m
-[38;5;34m    9[0m[38;5;33m    2[0m
+[38;5;34m   15[0m    .
+[38;5;34m    6[0m    .
+[38;5;34m    0[0m    .
+[38;5;34m   14[0m    .
+[38;5;34m   11[0m    .
+[38;5;34m   18[0m    .
+[38;5;34m   16[0m    .
+[38;5;34m   17[0m    .
+[38;5;34m    9[0m    .
+[38;5;34m   19[0m    .
+[38;5;34m   12[0m[38;5;33m    2[0m
+[38;5;34m    7[0m[38;5;33m    1[0m
+[38;5;34m   10[0m[38;5;33m    5[0m
+[38;5;34m   13[0m[38;5;33m    4[0m
 [38;5;34m    8[0m[38;5;33m    3[0m
-TRIEE PLUZOUMOINSREV ROTATIONi tab->size : 10
-i : 10 tmp : 519
-on est la 
-on est la 
-on est la 
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 56
-on est la 
-on est la 
-on est la 
-on est la 
-REV ROTATIONi tab->size : 10
-i : 10 tmp : 391
-on est la 
-on est la 
-on est la 
-on est la 
+index_marge : 5 tmp_marge = 10 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb ra 
+nbr opps : 20
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb ra rb rb pb 
+nbr opps : 23
+pos : 19
+MERGE pos : 19
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb 
+nbr opps : 22
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rra 
+nbr opps : 20
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rra rrb rrb rrb pb 
+nbr opps : 24
+pos : 19
+MERGE pos : 19
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rrb rrb pb 
+nbr opps : 23
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb 
+nbr opps : 22
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rrb rrb pb 
+nbr opps : 23
+apres free
     .    .
     .    .
-    .[38;5;33m  166[0m
-    .[38;5;33m  391[0m
-    .[38;5;33m   56[0m
-    .[38;5;33m  768[0m
-    .[38;5;33m  519[0m
-    .[38;5;33m  388[0m
-[38;5;34m  896[0m[38;5;33m  249[0m
-[38;5;34m  801[0m[38;5;33m  295[0m
-[38;5;33mOpperations : [0mra pb pb pb rb pb rrb pb rrb rrb pb rb pb ra rb pb 
-[38;5;93mNombre opperations : [0m16
+    .    .
+    .    .
+    .    .
+    .    .
+[38;5;34m    0[0m    .
+[38;5;34m   14[0m    .
+[38;5;34m   11[0m    .
+[38;5;34m   18[0m    .
+[38;5;34m   16[0m    .
+[38;5;34m   17[0m    .
+[38;5;34m    9[0m    .
+[38;5;34m   19[0m    .
+[38;5;34m   12[0m[38;5;33m    6[0m
+[38;5;34m    7[0m[38;5;33m    5[0m
+[38;5;34m   10[0m[38;5;33m    4[0m
+[38;5;34m   13[0m[38;5;33m    3[0m
+[38;5;34m    8[0m[38;5;33m    2[0m
+[38;5;34m   15[0m[38;5;33m    1[0m
+index_marge : 6 tmp_marge = 10 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb 
+nbr opps : 22
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb 
+nbr opps : 23
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb 
+nbr opps : 23
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb 
+nbr opps : 22
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb 
+nbr opps : 23
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb 
+nbr opps : 23
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb 
+nbr opps : 23
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb 
+nbr opps : 23
+apres free
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+[38;5;34m   14[0m    .
+[38;5;34m   11[0m    .
+[38;5;34m   18[0m    .
+[38;5;34m   16[0m    .
+[38;5;34m   17[0m    .
+[38;5;34m    9[0m    .
+[38;5;34m   19[0m[38;5;33m    0[0m
+[38;5;34m   12[0m[38;5;33m    6[0m
+[38;5;34m    7[0m[38;5;33m    5[0m
+[38;5;34m   10[0m[38;5;33m    4[0m
+[38;5;34m   13[0m[38;5;33m    3[0m
+[38;5;34m    8[0m[38;5;33m    2[0m
+[38;5;34m   15[0m[38;5;33m    1[0m
+index_marge : 7 tmp_marge = 10 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra ra 
+nbr opps : 28
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra ra rb pb 
+nbr opps : 30
+pos : 27
+MERGE pos : 27
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb 
+nbr opps : 29
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb rra rra 
+nbr opps : 25
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb rra rra rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 32
+pos : 24
+MERGE pos : 24
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb rra rr rrb rrb rrb rrb rrb pb 
+nbr opps : 31
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb 
+nbr opps : 29
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb rra rr rrb rrb rrb rrb rrb pb 
+nbr opps : 31
+apres free
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+[38;5;34m   19[0m    .
+[38;5;34m   12[0m    .
+[38;5;34m    7[0m    .
+[38;5;34m   10[0m    .
+[38;5;34m   13[0m[38;5;33m    9[0m
+[38;5;34m    8[0m[38;5;33m    6[0m
+[38;5;34m   15[0m[38;5;33m    5[0m
+[38;5;34m   14[0m[38;5;33m    4[0m
+[38;5;34m   11[0m[38;5;33m    3[0m
+[38;5;34m   18[0m[38;5;33m    2[0m
+[38;5;34m   16[0m[38;5;33m    1[0m
+[38;5;34m   17[0m[38;5;33m    0[0m
+index_marge : 8 tmp_marge = 10 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra ra 
+nbr opps : 31
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra ra rb pb 
+nbr opps : 33
+pos : 30
+MERGE pos : 30
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb 
+nbr opps : 32
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb rra rra rra rra rra rra rra 
+nbr opps : 36
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb rra rra rra rra rra rra rra rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 44
+pos : 35
+MERGE pos : 35
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb rra rra rra rra rra rra rr rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 43
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb 
+nbr opps : 32
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb rra rra rra rra rra rra rr rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 43
+apres free
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+[38;5;34m   10[0m    .
+[38;5;34m   13[0m    .
+[38;5;34m    8[0m[38;5;33m    7[0m
+[38;5;34m   15[0m[38;5;33m    6[0m
+[38;5;34m   14[0m[38;5;33m    5[0m
+[38;5;34m   11[0m[38;5;33m    4[0m
+[38;5;34m   18[0m[38;5;33m    3[0m
+[38;5;34m   16[0m[38;5;33m    2[0m
+[38;5;34m   17[0m[38;5;33m    1[0m
+[38;5;34m   19[0m[38;5;33m    0[0m
+[38;5;34m   12[0m[38;5;33m    9[0m
+index_marge : 9 tmp_marge = 10 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb 
+nbr opps : 32
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rb rb rb rb rb rb rb rb pb 
+nbr opps : 41
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rb rb rb rb rb rb rb rb pb 
+nbr opps : 41
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb 
+nbr opps : 32
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb 
+nbr opps : 34
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb 
+nbr opps : 34
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rb rb rb rb rb rb rb rb pb 
+nbr opps : 41
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb 
+nbr opps : 34
+apres free
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+[38;5;34m   13[0m[38;5;33m   10[0m
+[38;5;34m    8[0m[38;5;33m    9[0m
+[38;5;34m   15[0m[38;5;33m    7[0m
+[38;5;34m   14[0m[38;5;33m    6[0m
+[38;5;34m   11[0m[38;5;33m    5[0m
+[38;5;34m   18[0m[38;5;33m    4[0m
+[38;5;34m   16[0m[38;5;33m    3[0m
+[38;5;34m   17[0m[38;5;33m    2[0m
+[38;5;34m   19[0m[38;5;33m    1[0m
+[38;5;34m   12[0m[38;5;33m    0[0m
+index_marge : 10 tmp_marge = 15 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb 
+nbr opps : 34
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb 
+nbr opps : 35
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb 
+nbr opps : 35
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb 
+nbr opps : 34
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb 
+nbr opps : 35
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb 
+nbr opps : 35
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb 
+nbr opps : 35
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb 
+nbr opps : 35
+apres free
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .[38;5;33m   13[0m
+    .[38;5;33m   10[0m
+[38;5;34m    8[0m[38;5;33m    9[0m
+[38;5;34m   15[0m[38;5;33m    7[0m
+[38;5;34m   14[0m[38;5;33m    6[0m
+[38;5;34m   11[0m[38;5;33m    5[0m
+[38;5;34m   18[0m[38;5;33m    4[0m
+[38;5;34m   16[0m[38;5;33m    3[0m
+[38;5;34m   17[0m[38;5;33m    2[0m
+[38;5;34m   19[0m[38;5;33m    1[0m
+[38;5;34m   12[0m[38;5;33m    0[0m
+index_marge : 11 tmp_marge = 15 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb 
+nbr opps : 35
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb 
+nbr opps : 39
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb 
+nbr opps : 39
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb 
+nbr opps : 35
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rrb rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 44
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rrb rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 44
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb 
+nbr opps : 39
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rrb rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 44
+apres free
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .[38;5;33m    8[0m
+    .[38;5;33m    7[0m
+    .[38;5;33m    6[0m
+    .[38;5;33m    5[0m
+[38;5;34m   15[0m[38;5;33m    4[0m
+[38;5;34m   14[0m[38;5;33m    3[0m
+[38;5;34m   11[0m[38;5;33m    2[0m
+[38;5;34m   18[0m[38;5;33m    1[0m
+[38;5;34m   16[0m[38;5;33m    0[0m
+[38;5;34m   17[0m[38;5;33m   13[0m
+[38;5;34m   19[0m[38;5;33m   10[0m
+[38;5;34m   12[0m[38;5;33m    9[0m
+index_marge : 12 tmp_marge = 15 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb 
+nbr opps : 39
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rb rb rb rb rb rb rb rb rb pb 
+nbr opps : 49
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rb rb rb rb rb rb rb rb rb pb 
+nbr opps : 49
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb 
+nbr opps : 39
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb 
+nbr opps : 43
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb 
+nbr opps : 43
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rb rb rb rb rb rb rb rb rb pb 
+nbr opps : 49
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb 
+nbr opps : 43
+apres free
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .[38;5;33m   15[0m
+    .[38;5;33m   13[0m
+    .[38;5;33m   10[0m
+    .[38;5;33m    9[0m
+    .[38;5;33m    8[0m
+    .[38;5;33m    7[0m
+[38;5;34m   14[0m[38;5;33m    6[0m
+[38;5;34m   11[0m[38;5;33m    5[0m
+[38;5;34m   18[0m[38;5;33m    4[0m
+[38;5;34m   16[0m[38;5;33m    3[0m
+[38;5;34m   17[0m[38;5;33m    2[0m
+[38;5;34m   19[0m[38;5;33m    1[0m
+[38;5;34m   12[0m[38;5;33m    0[0m
+index_marge : 13 tmp_marge = 15 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb 
+nbr opps : 43
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb 
+nbr opps : 45
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb 
+nbr opps : 45
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb 
+nbr opps : 43
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 56
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 56
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb 
+nbr opps : 45
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 56
+apres free
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .[38;5;33m   14[0m
+    .[38;5;33m   13[0m
+    .[38;5;33m   10[0m
+    .[38;5;33m    9[0m
+    .[38;5;33m    8[0m
+    .[38;5;33m    7[0m
+    .[38;5;33m    6[0m
+    .[38;5;33m    5[0m
+[38;5;34m   11[0m[38;5;33m    4[0m
+[38;5;34m   18[0m[38;5;33m    3[0m
+[38;5;34m   16[0m[38;5;33m    2[0m
+[38;5;34m   17[0m[38;5;33m    1[0m
+[38;5;34m   19[0m[38;5;33m    0[0m
+[38;5;34m   12[0m[38;5;33m   15[0m
+index_marge : 14 tmp_marge = 15 tab->size : 20
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb 
+nbr opps : 45
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb rb rb pb 
+nbr opps : 48
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb rb rb pb 
+nbr opps : 48
+Apres ra 
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb 
+nbr opps : 45
+retour sort b
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 58
+retour merge
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 58
+aavamt show ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb rb rb pb 
+nbr opps : 48
+aavamt show cpy_ope
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb rrb pb 
+nbr opps : 58
+apres free
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .[38;5;33m   11[0m
+    .[38;5;33m   10[0m
+    .[38;5;33m    9[0m
+    .[38;5;33m    8[0m
+    .[38;5;33m    7[0m
+    .[38;5;33m    6[0m
+    .[38;5;33m    5[0m
+    .[38;5;33m    4[0m
+    .[38;5;33m    3[0m
+    .[38;5;33m    2[0m
+[38;5;34m   18[0m[38;5;33m    1[0m
+[38;5;34m   16[0m[38;5;33m    0[0m
+[38;5;34m   17[0m[38;5;33m   15[0m
+[38;5;34m   19[0m[38;5;33m   14[0m
+[38;5;34m   12[0m[38;5;33m   13[0m
+index_marge : 15 tmp_marge = 20 tab->size : 20
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .[38;5;33m   11[0m
+    .[38;5;33m   10[0m
+    .[38;5;33m    9[0m
+    .[38;5;33m    8[0m
+    .[38;5;33m    7[0m
+    .[38;5;33m    6[0m
+    .[38;5;33m    5[0m
+    .[38;5;33m    4[0m
+    .[38;5;33m    3[0m
+    .[38;5;33m    2[0m
+[38;5;34m   18[0m[38;5;33m    1[0m
+[38;5;34m   16[0m[38;5;33m    0[0m
+[38;5;34m   17[0m[38;5;33m   15[0m
+[38;5;34m   19[0m[38;5;33m   14[0m
+[38;5;34m   12[0m[38;5;33m   13[0m
+opps : ra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb rb rb pb 
+nbr opps : 48
+    .    .
+    .    .
+    .    .
+    .    .
+    .    .
+    .[38;5;33m  118[0m
+    .[38;5;33m  792[0m
+    .[38;5;33m  490[0m
+    .[38;5;33m   24[0m
+    .[38;5;33m  123[0m
+    .[38;5;33m  984[0m
+    .[38;5;33m  990[0m
+    .[38;5;33m  221[0m
+    .[38;5;33m  169[0m
+    .[38;5;33m  786[0m
+[38;5;34m  153[0m[38;5;33m  299[0m
+[38;5;34m  412[0m[38;5;33m  911[0m
+[38;5;34m  708[0m[38;5;33m  663[0m
+[38;5;34m  734[0m[38;5;33m  983[0m
+[38;5;34m  350[0m[38;5;33m  278[0m
+[38;5;33mOpperations : [0mra pb rra rra pb rra rr pb rr rrb pb ra ra ra ra ra ra ra pb rr rb pb pb ra ra ra ra rr pb ra rr pb rrb pb pb rb rb rb pb rrb rrb rrb pb rb pb rb rb pb 
+[38;5;93mNombre opperations : [0m48

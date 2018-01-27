@@ -6,7 +6,7 @@
 /*   By: cvermand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/13 20:47:04 by cvermand          #+#    #+#             */
-/*   Updated: 2018/01/15 19:22:50 by cvermand         ###   ########.fr       */
+/*   Updated: 2018/01/27 19:01:35 by cvermand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ t_opp	*simple_ra_sa_pb(t_tab *tab, t_opp *ope)
 	
 	while (!(pile_a_sorted_b_empty(tab)))
 	{
-		show_piles(tab);
-		show_saved_opps(ope->opps, ope->nbr);
+	//	show_piles(tab);
+	//	show_saved_opps(ope->opps, ope->nbr);
 		if (pile_a_is_sorted(tab))
 		{
 			if (!(cpy_tab = copy_tab(tab)))
